@@ -4,4 +4,4 @@
 
 Build 30 Things in 30 Days
 
-@wesbos
+@ [Wes Bos](https://JavaScript30.com)
