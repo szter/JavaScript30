@@ -1,13 +1,4 @@
 // Prettier: ctrl+shift+p > Format Document OR Format Selection
-window.requestAnimFrame = (function(){
-    return  window.requestAnimationFrame       ||
-            window.webkitRequestAnimationFrame ||
-            window.mozRequestAnimationFrame    ||
-            function( callback ){
-                window.setTimeout(callback, 1000 / 60);
-            };
-  })();
-
 (function setClock() {
     // get the elements
     const secondHand = document.querySelector('.sec-hand');
