@@ -1,4 +1,3 @@
-// Prettier: ctrl+shift+p > Format Document OR Format Selection
 (function setClock() {
     // get the elements
     const secondHand = document.querySelector('.sec-hand');
