@@ -23,6 +23,7 @@ function strip(bandName) {
 //     else return -1;
 // })
 
+// using strip inside the if statement strips the articles and sorts the band names without modifiying the original array
 const sortedBands = bands.sort((a, b) => (strip(a) > strip(b) ? 1 : -1));
 
 console.log(sortedBands);
@@ -30,4 +31,3 @@ console.log(sortedBands);
 document.querySelector('#bands').innerHTML = sortedBands
     .map(band => `<li>${band}</li>`)
     .join('');
-    
