@@ -82,6 +82,7 @@ nav ul {
     display: none;
 }
 
+/* to trigger the animation effect */
 .trigger-enter .dropdown {
     display: block;
 }
@@ -89,6 +90,7 @@ nav ul {
 .trigger-enter-active .dropdown {
     opacity: 1;
 }
+/* end */
 
 .dropdownBackground {
     width: 100px;
