@@ -27,6 +27,11 @@ body {
     transition: transform 0.5s;
 }
 
+/* when the body has a class of fixed-nav: scale .site-wrap */
+.fixed-nav .site-wrap {
+    transform: scale(1);
+}
+
 header {
     text-align: center;
     height: 50vh;
@@ -52,6 +57,12 @@ nav {
     z-index: 1;
 }
 
+/* when the body has a class of fixed-nav: fix and add shadow to nav */
+.fixed-nav nav {
+    position: fixed;
+    box-shadow: 0 5px rgba(0, 0, 0, 0.1);
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -68,12 +79,17 @@ nav li {
 }
 
 li.logo {
-    max-width: 0;
+    max-width: 0; /* max-width is needed for transition to work */
     overflow: hidden;
     background: white;
     transition: all 0.5s;
     font-weight: 600;
     font-size: 30px;
+}
+
+/* when the body has a class of fixed-nav: add max-width to li.logo */
+.fixed-nav li.logo {
+    max-width: 500px;
 }
 
 li.logo a {
